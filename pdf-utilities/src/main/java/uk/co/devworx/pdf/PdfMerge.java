@@ -5,10 +5,7 @@ import org.apache.logging.log4j.Logger;
 import org.apache.pdfbox.pdmodel.PDDocument;
 
 import java.io.IOException;
-import java.nio.file.FileVisitResult;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.SimpleFileVisitor;
+import java.nio.file.*;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.*;
 
@@ -112,6 +109,23 @@ public class PdfMerge
 		}
 	}
 	
+
+	public static void main(String... args) throws Exception
+	{
+		if(args.length < 2)
+		{
+			throw new IllegalArgumentException("You must specify 2 arguments: \n" +
+											   "1) The Output PDF to produce. \n" +
+											   "2) The Directory of PDF files to merge.");
+		}
+
+		Path p1 = Paths.get(args[0]);
+		Path p2 = Paths.get(args[1]);
+
+		PdfMerge.MergePDFFilesInDirectory(p1, p2);
+
+		System.exit(0);
+	}
 
 
 	

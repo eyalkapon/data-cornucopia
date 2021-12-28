@@ -15,6 +15,33 @@
 	<name>pdf-utilities</name>
 	
 	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>appassembler-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>assemble</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<repositoryLayout>flat</repositoryLayout>
+					<useWildcardClassPath>true</useWildcardClassPath>
+					<programs>
+						<!-- You can have multiple programs-->
+						<program>
+							<id>PdfMerge</id>
+							<mainClass>uk.co.devworx.pdf.PdfMerge</mainClass>
+							<commandLineArguments>
+							</commandLineArguments>
+						</program>
+					</programs>
+				</configuration>
+			</plugin>
+		</plugins>
 	</build>
 
 	<dependencies>
