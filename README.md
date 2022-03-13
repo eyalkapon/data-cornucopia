@@ -1,6 +1,6 @@
-![Java 8 / 11 Build on Linux](https://github.com/jjsteenkamp/data-cornucopia/workflows/Java%208%20/%2011%20Build%20on%20Linux/badge.svg)
+![Java 8 / 11 Build on Linux](https://github.com/jjsteenkamp/data-cornucopia/workflows/Java%20LTS%20Build%20on%20Linux/badge.svg)
 
-![Java 8 / 11 Build on Windows](https://github.com/jjsteenkamp/data-cornucopia/workflows/Java%208%20/%2011%20Build%20on%20Windows/badge.svg)
+![Java 8 / 11 Build on Windows](https://github.com/jjsteenkamp/data-cornucopia/workflows/Java%20LTS%20Build%20on%20Windows/badge.svg)
 
 # Data-Cornucopia
 

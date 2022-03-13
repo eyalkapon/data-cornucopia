@@ -1,4 +1,4 @@
-name: Java 8 / 11 Build on Windows
+name: Java LTS Build on Windows
 
 on: [push]
 
@@ -9,7 +9,7 @@ jobs:
     strategy:
       matrix:
         # Test Against LTS Java Versions
-        java: [ 8, 11 ]
+        java: [ 8, 11, 17 ]
 
     steps:
       - uses: actions/checkout@v2
