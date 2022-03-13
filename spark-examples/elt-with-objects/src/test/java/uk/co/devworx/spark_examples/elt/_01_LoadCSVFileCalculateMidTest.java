@@ -24,6 +24,7 @@ public class _01_LoadCSVFileCalculateMidTest
 		SparkSession sparkSession = SparkSession.builder()
 												.appName("SparkTestCase")
 												.master("local[1]")
+											    .config("spark.driver.bindAddress", "127.0.0.1")
 												.getOrCreate();
 		
 		Dataset<Row> df = sparkSession.read()

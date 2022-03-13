@@ -128,6 +128,7 @@ class _Local_ExecutionEnv extends ExecutionEnv
 					  .config("spark.sql.orc.impl","native")
 					  .config("spark.sql.datetime.java8API.enabled","true")
 					  .config("spark.sql.parquet.compression.codec", "gzip")
+					  .config("spark.driver.bindAddress", "127.0.0.1")
 					  .getOrCreate());
 
 		SparkSession sparkSession = getSparkSession();
