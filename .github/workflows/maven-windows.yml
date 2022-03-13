@@ -9,7 +9,8 @@ jobs:
     strategy:
       matrix:
         # Test Against LTS Java Versions
-        java: [ 8, 11, 17 ]
+        java: [ 8, 11 ]
+        #java: [ 8, 11, 17 ] - Waiting for Spark 3.3.0 - before we can do 17
 
     steps:
       - uses: actions/checkout@v2
