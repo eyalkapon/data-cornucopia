@@ -55,6 +55,7 @@
    		<module>spark-examples</module>
 		<module>excel-integration</module>
 		<module>pdf-utilities</module>
+		<module>echo-servlet</module>
     </modules>
 
 
