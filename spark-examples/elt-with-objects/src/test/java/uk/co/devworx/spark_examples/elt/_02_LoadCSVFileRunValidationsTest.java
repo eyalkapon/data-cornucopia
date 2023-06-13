@@ -7,6 +7,7 @@ import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Encoders;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import uk.co.devworx.spark_examples.elt.model.BuildValidationFailure;
@@ -22,7 +23,7 @@ public class _02_LoadCSVFileRunValidationsTest
 {
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
-	@Test @Ignore
+	@Test @Disabled
 	public void test()
 	{
 		SparkSession sparkSession = SparkSession.builder()

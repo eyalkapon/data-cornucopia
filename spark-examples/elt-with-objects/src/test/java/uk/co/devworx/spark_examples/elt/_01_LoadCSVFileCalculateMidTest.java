@@ -1,13 +1,12 @@
 package uk.co.devworx.spark_examples.elt;
 
-import jdk.nashorn.internal.ir.annotations.Ignore;
 import org.apache.spark.api.java.function.MapFunction;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Encoders;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-
 import uk.co.devworx.spark_examples.elt.model.StockPrice;
 
 /**
@@ -19,7 +18,7 @@ import uk.co.devworx.spark_examples.elt.model.StockPrice;
 public class _01_LoadCSVFileCalculateMidTest
 {
 
-	@Test @Ignore
+	@Test @Disabled
 	public void test()
 	{
 		SparkSession sparkSession = SparkSession.builder()

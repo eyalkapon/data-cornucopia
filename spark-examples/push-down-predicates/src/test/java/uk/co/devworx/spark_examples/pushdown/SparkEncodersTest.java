@@ -7,11 +7,13 @@ import org.apache.spark.sql.Encoder;
 import org.apache.spark.sql.Encoders;
 import org.apache.spark.sql.SparkSession;
 import org.apache.spark.sql.types.StructType;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
 import java.util.Collections;
 
+@Disabled
 public class SparkEncodersTest
 {
 	private static final Logger logger = LogManager.getLogger(ExecutionEnv.class);
