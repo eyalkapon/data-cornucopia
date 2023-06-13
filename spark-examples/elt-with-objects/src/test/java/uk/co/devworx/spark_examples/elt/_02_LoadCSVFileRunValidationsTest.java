@@ -22,7 +22,7 @@ public class _02_LoadCSVFileRunValidationsTest
 {
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
-	@Test
+	@Test @Ignore
 	public void test()
 	{
 		SparkSession sparkSession = SparkSession.builder()

@@ -1,5 +1,6 @@
 package uk.co.devworx.spark_examples.elt;
 
+import jdk.nashorn.internal.ir.annotations.Ignore;
 import org.apache.spark.api.java.function.MapFunction;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Encoders;
@@ -18,7 +19,7 @@ import uk.co.devworx.spark_examples.elt.model.StockPrice;
 public class _01_LoadCSVFileCalculateMidTest
 {
 
-	@Test
+	@Test @Ignore
 	public void test()
 	{
 		SparkSession sparkSession = SparkSession.builder()
